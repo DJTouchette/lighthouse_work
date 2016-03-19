@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJTouchette/portfolio.git"
+  },
+  "author": "Damien Touchette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DJTouchette/portfolio/issues"
+  },
+  "homepage": "https://github.com/DJTouchette/portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

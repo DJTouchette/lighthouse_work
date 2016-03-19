@@ -1,0 +1,29 @@
+<p>Prompt the user for a word. Then add that word 10 times into the gray box. Make sure the word is added on a separate/new line each time. <strong>The word should be added once every second, instead of simultaneously.</strong></p>
+<p><strong>NOTE:</strong> The &amp;nbsp; is present in the HTML source just so that the gray box will show. It is not part of the solution, and is only there as a placeholde
+r.</p>
+<p>Edit the page source to begin.</p>
+
+<div id ="word-holder" class="question">
+	<h2>&nbsp;</h2>
+</div>
+
+<script>
+	$(function() {
+			/**** YOU MAY MODIFY THE CODE BELOW ****/
+			$("#word-holder").empty();
+			function repeat () {
+				var element = $('<h2>');
+				element.text = prompt('Whats the word chief?');
+				console.log(element.text);
+				$(element).prependTo("#word-holder");
+				// $(divRow).appendTo('#main-screen');
+			// for (var i = 0; i < 11; i++){
+			// 	element.appendTo($('#word-holder'));
+			// }
+		}
+
+		repeat();
+
+			/**** STOP MODIFYING HERE. ****/
+	});
+</script>

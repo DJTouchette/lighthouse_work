@@ -1,0 +1,57 @@
+<style>
+  /**** YOU MAY ADD OR MODIFY CSS BELOW ****/
+
+  /**** STOP MODIFYING HERE. ****/
+</style>
+
+<p>Write an AJAX call to <code>/products</code>. Take the JSON data that is returned and append it to the table below, as appropriate.</p>
+
+<p>Edit the the page source to begin.</p>
+
+<div class="question">
+  <table id="products">
+    <thead>
+      <tr>
+        <th id='name'>Product Name</th>
+        <th id='price'>Price</th>
+        <th id='qty'>Quantity</th>
+      </tr>
+     </thead>
+     <tbody>
+
+     </tbody>
+   </table>
+</div>
+
+<script>
+
+  $(function() {
+    /**** YOU MAY MODIFY THE CODE BELOW ****/
+    $.ajax({
+     url:'/products',
+     dataType: 'json',
+     success: function(data){
+       show(data);
+       console.log(data);
+      }
+     });
+
+     function show(data) {
+
+       for (var i = 0; i < data.length; i ++) {
+
+         var productName = $('<td>').text(data[i].name);
+         var productPrice = $('<td>').text(data[i].price);
+         var productQty = $('<td>').text(data[i].qty);
+
+         // Append to th with matching id
+
+       }
+     }
+
+
+
+    /**** STOP MODIFYING HERE. ****/
+  });
+
+</script>
